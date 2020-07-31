@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "todo-web-c5c9d": {
+      "hosting": {
+        "todo-web": [
+          "todo-web-c5c9d"
+        ]
+      }
+    }
+  }
+}
