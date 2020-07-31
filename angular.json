@@ -117,8 +117,16 @@
               "devServerTarget": "todo-web:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "todo-web"
+    }
+  },
+  "defaultProject": "todo-web",
+  "cli": {
+    "analytics": false
+  }
 }
