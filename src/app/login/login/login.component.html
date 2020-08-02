@@ -5,18 +5,18 @@
       <small id="emailHelp" class="form-text text-muted">Note: As of right now, you can only sign in via google</small>
       <div class="form-signin">
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <label for="emailInput">Email address</label>
+          <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <label for="passwordInput">Password</label>
+          <input type="password" class="form-control" id="passwordInput" placeholder="Password">
         </div>
-        <button class="btn btn-lg btn-primary btn-block" (click)="login()" routerLink="/" disabled>Sign in</button>
-        <button class="btn btn-lg btn-secondary btn-block" (click)="login()" routerLink="/" disabled>Register for Account</button>
+        <button class="btn btn-sm btn-primary btn-block" (click)="login()" routerLink="/" disabled>Sign in</button>
+        <button class="btn btn-sm btn-secondary btn-block" (click)="login()" routerLink="/" disabled>Register for Account</button>
         <hr>
-        <button class="btn btn-lg btn-danger btn-block" (click)="loginWithGmail()" routerLink="/">Sign in with Google</button>
+        <button class="btn btn-sm btn-danger btn-block" (click)="loginWithGmail()" routerLink="/">Sign in with Google</button>
       </div>
       <p></p>
     </div>
