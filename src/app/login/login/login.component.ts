@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   constructor(
-    public auth: AngularFireAuth,
+    public fireAuth: AngularFireAuth,
     public router: Router
   ) { }
 
@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   }
 
   loginWithGmail() {
-    this.auth.signInWithPopup(new auth.GoogleAuthProvider)
-    this.router.navigate[('dashboard')];
+    this.fireAuth.signInWithPopup(new auth.GoogleAuthProvider());
+    this.router.navigate[('')];
   }
 }

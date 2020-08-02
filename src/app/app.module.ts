@@ -8,14 +8,14 @@ import { LoginComponent } from './login/login/login.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
-import { NavbarComponent } from './nav/navbar/navbar.component';
+import { SidenavComponent } from './nav/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    NavbarComponent
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
