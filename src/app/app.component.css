@@ -1,0 +1,15 @@
+.container-fluid {
+    min-height: 100vh;
+  }
+  
+  .col-2 {
+    padding: 0px;
+  }
+  
+  .outlet {
+    margin: .5rem;
+  }
+  
+  app-navbar {
+    min-width: 100%;
+  }

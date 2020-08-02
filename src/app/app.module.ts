@@ -7,11 +7,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login/login.component';
 
 import { AngularFireModule } from '@angular/fire';
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { SidenavComponent } from './nav/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
