@@ -23,7 +23,10 @@ export class LoginComponent implements OnInit {
   }
 
   loginWithGmail() {
-    this.fireAuth.signInWithPopup(new auth.GoogleAuthProvider());
-    this.router.navigate[('')];
+    this.fireAuth.signInWithPopup(new auth.GoogleAuthProvider()).then(
+      res => {
+        this.router.navigate(['']);
+      }
+    );
   }
 }
