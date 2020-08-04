@@ -10,6 +10,7 @@ const redirectLoggedInToDashboard = () => redirectLoggedInTo(['']);
 const routes: Routes = [
   {path: '', component: DashboardComponent, ...canActivate(redirectUnauthorizedToLogin)},
   {path: 'login', component: LoginComponent, ...canActivate(redirectLoggedInToDashboard)},
+
 ];
 
 @NgModule({
