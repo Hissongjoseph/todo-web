@@ -5,12 +5,9 @@ import { redirectUnauthorizedTo, redirectLoggedInTo, canActivate} from '@angular
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['login']);
-const redirectLoggedInToDashboard = () => redirectLoggedInTo(['']);
 
 const routes: Routes = [
   {path: '', component: DashboardComponent, ...canActivate(redirectUnauthorizedToLogin)},
-  {path: 'login', component: LoginComponent, ...canActivate(redirectLoggedInToDashboard)},
-
 ];
 
 @NgModule({
