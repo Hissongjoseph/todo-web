@@ -9,18 +9,22 @@ import { LoginComponent } from './login/login/login.component';
 import { AngularFireModule } from '@angular/fire';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { SidenavComponent } from './nav/sidenav/sidenav.component';
+import { TasktableComponent } from './table/tasktable/tasktable.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    SidenavComponent
+    SidenavComponent,
+    TasktableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
