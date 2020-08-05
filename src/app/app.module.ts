@@ -11,6 +11,8 @@ import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { SidenavComponent } from './nav/sidenav/sidenav.component';
 import { TasktableComponent } from './table/tasktable/tasktable.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TaskformComponent } from './form/taskform/taskform.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     LoginComponent,
     DashboardComponent,
     SidenavComponent,
-    TasktableComponent
+    TasktableComponent,
+    TaskformComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
