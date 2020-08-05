@@ -7,9 +7,7 @@
   }
   
   .outlet {
+    height: 90vh;
     margin: .5rem;
   }
   
-  app-navbar {
-    min-width: 100%;
-  }
