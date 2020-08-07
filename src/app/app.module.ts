@@ -13,6 +13,7 @@ import { TasktableComponent } from './table/tasktable/tasktable.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TaskformComponent } from './form/taskform/taskform.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NavbarComponent } from './nav/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SidenavComponent,
     TasktableComponent,
     TaskformComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
